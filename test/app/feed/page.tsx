@@ -44,9 +44,7 @@ return (
             <div key={index} className="p-5  text-center">
                 <h2 className="text-2xl">{post.name}</h2>
                 <p className="text-2xl">{post.text}</p>
-                <button className="text-2xl" onClick={() => addLike(index)}>
-                    ❤️
-                </button>
+                <button className="text-2xl" onClick={() => addLike(index)}>❤️ </button>
                 <span className="text-2xl">{post.likes} Likes</span>
             </div>
         ))}
