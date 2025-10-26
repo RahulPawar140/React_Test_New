@@ -10,7 +10,7 @@ interface Post {
 export default function Feed() {
     const [name, setName] = useState("");
     const [text, setText] = useState("");
-    const [posts, setPosts] = useState<string[]>([]); 
+    const [posts, setPosts] = useState<Post[]>([]); 
     
     const SubmitPost = (e: React.FormEvent) => {
         e.preventDefault();
